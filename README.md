@@ -1,7 +1,5 @@
 # Hoovflight Configurator
 
-![Hoovflight](http://static.rcgroups.net/forums/attachments/6/1/0/3/7/6/a9088900-228-bf_logo.jpg)
-
 Hoovflight Configurator is a crossplatform configuration tool for the Hoovflight flight control system.
 
 It runs as an app within Google Chrome and allows you to configure the Hoovflight software running on any [supported Hoovflight target](https://github.com/hoovflight/hoovflight/tree/master/src/main/target).
@@ -12,7 +10,7 @@ Various types of aircraft are supported by the tool and by Hoovflight, e.g. quad
 
 ## Authors
 
-Hoovflight Configurator is a [fork](#credits) of the Cleanflight Configurator with support for Hoovflight instead of Cleanflight.
+Hoovflight Configurator is a [fork](#credits) of the Betaflight Configurator with support for Hoovflight instead of Cleanflight.
 
 This configurator is the only configurator with support for Hoovflight specific features. It will likely require that you run the latest firmware on the flight controller.
 If you are experiencing any problems please make sure you are running the [latest firmware version](https://github.com/hoovflight/hoovflight/releases/).
@@ -22,35 +20,6 @@ If you are experiencing any problems please make sure you are running the [lates
 ### Standalone
 
 Download the installer from [Releases.](https://github.com/hoovflight/hoovflight-configurator/releases)
-
-### Via Chrome Web Store
-
-[![available in the Chrome web store](https://developer.chrome.com/webstore/images/ChromeWebStore_Badge_v2_206x58.png)](https://chrome.google.com/webstore/detail/hoovflight-configurator/kdaghagfopacdngbohiknlhcocjccjao)
-
-1. Visit the [Hoovflight Configurator product page in the Chrome web store](https://chrome.google.com/webstore/detail/hoovflight-configurator/kdaghagfopacdngbohiknlhcocjccjao)
-2. Click **+ Add to Chrome**
-
-Please note - the application will automatically update itself when new versions are released.  Please ensure you maintain configuration backups as described in the Hoovflight documentation.
-
-### Alternative way, Chrome app:
-
-1. Clone the repo to any local directory or download it as zip.
-2. Extract to a folder and not the folder.
-3. Start Google Chrome.
-4. Click the 3-dots on the far right of the URL bar.
-5. Select "More Tools"
-6. Select "Extensions"
-7. Check the Developer Mode checkbox.
-8. Click on load unpacked extension.
-9. Point it to the folder you extracted the zip to.
-
-## How to use
-
-You can find the Hoovflight Configurator icon in your application tab "Apps"
-
-## Native app build via NW.js
-
-Linux build is disabled currently because of unmet dependecies with some distros, it can be enabled in the `gulpfile.js`.
 
 ### Development
 
@@ -89,8 +58,6 @@ Hoovflight Configurator has been translated into several languages. The applicat
 
 If you prefer to have the application in English or any other language, you can select your desired language in the options menu of the application.
 
-## Notes
-
 ### WebGL
 
 Make sure Settings -> System -> "User hardware acceleration when available" is checked to achieve the best performance
@@ -102,24 +69,6 @@ Dont forget to add your user into dialout group "sudo usermod -aG dialout YOUR_U
 ### Linux / MacOSX users
 
 If you have 3D model animation problems, enable "Override software rendering list" in Chrome flags chrome://flags/#ignore-gpu-blacklist
-
-## Support
-
-If you need help please reach out on the [hoovflightgroup](https://hoovflightgroup.slack.com) slack channel before raising issues on github. Register and [request slack access here](http://www.hoovflight.tk).
-
-### Issue trackers
-
-For Hoovflight configurator issues raise them here
-
-https://github.com/hoovflight/hoovflight-configurator/issues
-
-For Hoovflight firmware issues raise them here
-
-https://github.com/hoovflight/hoovflight/issues
-
-## Technical details
-
-The configurator is based on chrome.serial API running on Google Chrome/Chromium core.
 
 ## Developers
 
