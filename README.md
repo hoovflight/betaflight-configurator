@@ -1,5 +1,7 @@
 # Hoovflight Configurator
 
+![hoovflight](https://github.com/hoovflight/hoovflight-configurator/blob/master/src/images/cf_logo_white.svg)
+
 Hoovflight Configurator is a crossplatform configuration tool for the Hoovflight flight control system.
 
 It runs as an app within Google Chrome and allows you to configure the Hoovflight software running on any [supported Hoovflight target](https://github.com/hoovflight/hoovflight/tree/master/src/main/target).
