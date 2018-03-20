@@ -5,22 +5,22 @@
 
 .tab-auxiliary .help {
     padding: 10px;
-    background-color: #ffcb18;
+    background-color: #ba7bef;
     margin-bottom: 10px;
 }
 
 .tab-auxiliary .range .marker, .tab-auxiliary .channel-slider .noUi-connect {
-    background: #ffbb00;
+    background: #af74e0;
     border-radius: 3px;
 }
 
 .tab-auxiliary .mode.on .info {
-    background: #ffbb00;
+    background: #af74e0;
     color: black;
 }
 
 .tab-auxiliary .mode.on:nth-child(odd) .info {
-    background: #ffbb00;
+    background: #af74e0;
 }
 
 .tab-auxiliary .mode.off .info {

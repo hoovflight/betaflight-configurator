@@ -9,7 +9,7 @@ TABS.power.initialize = function (callback) {
 
     if (GUI.active_tab != 'power') {
         GUI.active_tab = 'power';
-        // Disabled on merge into betaflight-configurator
+        // Disabled on merge into hoovflight-configurator
         //googleAnalytics.sendAppView('Power');
     }
 

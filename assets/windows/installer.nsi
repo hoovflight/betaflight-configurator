@@ -9,14 +9,14 @@
 # ${DEST_FOLDER} - Destination folder for the installer files
 
 # Some definitions
-!define SOURCE_FILES          "..\..\apps\betaflight-configurator\${PLATFORM}\*"
-!define APP_NAME              "Betaflight Configurator"
-!define COMPANY_NAME          "The Betaflight open source project."
-!define GROUP_NAME            "Betaflight"
-!define FOLDER_NAME           "Betaflight-Configurator"
-!define FILE_NAME_INSTALLER   "betaflight-configurator-installer_${VERSION}_${PLATFORM}.exe"
-!define FILE_NAME_UNINSTALLER "uninstall-betaflight-configurator.exe"
-!define FILE_NAME_EXECUTABLE  "betaflight-configurator.exe"
+!define SOURCE_FILES          "..\..\apps\hoovflight-configurator\${PLATFORM}\*"
+!define APP_NAME              "Hoovflight Configurator"
+!define COMPANY_NAME          "The Hoovflight open source project."
+!define GROUP_NAME            "Hoovflight"
+!define FOLDER_NAME           "Hoovflight-Configurator"
+!define FILE_NAME_INSTALLER   "hoovflight-configurator-installer_${VERSION}_${PLATFORM}.exe"
+!define FILE_NAME_UNINSTALLER "uninstall-hoovflight-configurator.exe"
+!define FILE_NAME_EXECUTABLE  "hoovflight-configurator.exe"
 !define LICENSE               "..\..\LICENSE"
 
 

@@ -220,8 +220,8 @@
     text-align: center;
     background-color: #fff;
     border-radius: 4px;
-    border: 1px solid #ffbb00;
-    color: #ffbb00;
+    border: 1px solid #af74e0;
+    color: #af74e0;
     font-family: 'open_sanssemibold', Arial;
     font-size: 12px;
     line-height: 13px;
@@ -243,8 +243,8 @@
     text-align: center;
     background-color: #fff;
     border-radius: 4px;
-    border: 1px solid #ffbb00;
-    color: #ffbb00;
+    border: 1px solid #af74e0;
+    color: #af74e0;
     font-family: 'open_sanssemibold', Arial;
     font-size: 12px;
     line-height: 13px;
@@ -262,9 +262,9 @@
     margin-top: 8px;
     margin-bottom: 8px;
     margin-right: 10px;
-    background-color: #ffbb00;
+    background-color: #af74e0;
     border-radius: 3px;
-    border: 1px solid #dba718;
+    border: 1px solid #7F54A2;
     color: #000;
     font-family: 'open_sansbold', Arial;
     font-size: 12px;
@@ -278,11 +278,11 @@
     line-height: 28px;
 }
 .tab-setup .regular-button:hover {
-    background-color: #ffcc3e;
+    background-color: #af74e0;
     transition: all ease 0.2s;
 }
 .tab-setup .regular-button:active {
-    background-color: #ffcc3e;
+    background-color: #af74e0;
     transition: all ease 0.0s;
     box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 0.35);
 }

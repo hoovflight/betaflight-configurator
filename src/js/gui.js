@@ -13,7 +13,7 @@ var GUI_control = function () {
     this.operating_system;
     this.interval_array = [];
     this.timeout_array = [];
-    
+
     this.defaultAllowedTabsWhenDisconnected = [
         'landing',
         'firmware_flasher',
@@ -254,7 +254,7 @@ GUI_control.prototype.switchery = function() {
     $('.togglesmall').each(function(index, elem) {
         var switchery = new Switchery(elem, {
           size: 'small',
-          color: '#ffbb00',
+          color: '#9160ba',
           secondaryColor: '#c4c4c4'
         });
         $(elem).on("change", function (evt) {
@@ -265,7 +265,7 @@ GUI_control.prototype.switchery = function() {
 
     $('.toggle').each(function(index, elem) {
         var switchery = new Switchery(elem, {
-            color: '#ffbb00',
+            color: '#9160ba',
             secondaryColor: '#c4c4c4'
         });
         $(elem).on("change", function (evt) {
@@ -277,7 +277,7 @@ GUI_control.prototype.switchery = function() {
     $('.togglemedium').each(function(index, elem) {
         var switchery = new Switchery(elem, {
             className: 'switcherymid',
-            color: '#ffbb00',
+            color: '#9160ba',
             secondaryColor: '#c4c4c4'
          });
          $(elem).on("change", function (evt) {
@@ -295,7 +295,7 @@ GUI_control.prototype.content_ready = function (callback) {
         // Build link to in-use CF version documentation
         var documentationButton = $('div#content #button-documentation');
         documentationButton.html("Wiki");
-        documentationButton.attr("href","https://github.com/betaflight/betaflight/wiki");
+        documentationButton.attr("href","https://github.com/hoovflight/hoovflight/wiki");
     }
 
     // loading tooltip
@@ -305,7 +305,7 @@ GUI_control.prototype.content_ready = function (callback) {
     });
 
     $('.cf_tip').each(function() {
-        $(this).jBox('Tooltip', {            
+        $(this).jBox('Tooltip', {
             delayOpen: 100,
             delayClose: 100,
             position: {

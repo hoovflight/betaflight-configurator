@@ -2,10 +2,10 @@
     "manifest_version": 2,
     "minimum_chrome_version": "38",
     "version": "10.3.0",
-    "author": "Betaflight Squad",
-    "name": "Betaflight - Configurator",
-    "short_name": "Betaflight",
-    "description": "Crossplatform configuration tool for Betaflight flight control system",
+    "author": "Hoovflight Squad",
+    "name": "Hoovflight - Configurator",
+    "short_name": "Hoovflight",
+    "description": "Crossplatform configuration tool for Hoovflight flight control system",
 
     "offline_enabled": true,
 

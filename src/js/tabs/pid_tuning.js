@@ -736,7 +736,7 @@ TABS.pid_tuning.initialize = function (callback) {
             } else {
                 pidControllerList = [
                     {name: "Legacy"},
-                    {name: "Betaflight"}
+                    {name: "Hoovflight"}
                 ]
             }
 
@@ -897,7 +897,7 @@ TABS.pid_tuning.initialize = function (callback) {
                 context.moveTo(midx, midy);
                 context.quadraticCurveTo(midxr, midyr, canvasWidth, 0);
                 context.lineWidth = 2;
-                context.strokeStyle = '#ffbb00';
+                context.strokeStyle = '#9160ba';
                 context.stroke();
             }, 0);
         }).trigger('input');

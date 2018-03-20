@@ -391,7 +391,7 @@ function startProcess() {
 };
 
 function checkForConfiguratorUpdates() {
-    var releaseChecker = new ReleaseChecker('configurator', 'https://api.github.com/repos/betaflight/betaflight-configurator/releases');
+    var releaseChecker = new ReleaseChecker('configurator', 'https://api.github.com/repos/hoovflight/hoovflight-configurator/releases');
 
     releaseChecker.loadReleaseData(notifyOutdatedVersion);
 }

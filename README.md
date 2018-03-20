@@ -1,36 +1,36 @@
-# Betaflight Configurator
+# Hoovflight Configurator
 
-![Betaflight](http://static.rcgroups.net/forums/attachments/6/1/0/3/7/6/a9088900-228-bf_logo.jpg)
+![Hoovflight](http://static.rcgroups.net/forums/attachments/6/1/0/3/7/6/a9088900-228-bf_logo.jpg)
 
-Betaflight Configurator is a crossplatform configuration tool for the Betaflight flight control system.
+Hoovflight Configurator is a crossplatform configuration tool for the Hoovflight flight control system.
 
-It runs as an app within Google Chrome and allows you to configure the Betaflight software running on any [supported Betaflight target](https://github.com/betaflight/betaflight/tree/master/src/main/target).
+It runs as an app within Google Chrome and allows you to configure the Hoovflight software running on any [supported Hoovflight target](https://github.com/hoovflight/hoovflight/tree/master/src/main/target).
 
-There is also now a standalone version available, since Google Chrome Apps are getting deprecated on platforms that aren't Chrome OS. [Downloads are available in Releases.](https://github.com/betaflight/betaflight-configurator/releases)
+There is also now a standalone version available, since Google Chrome Apps are getting deprecated on platforms that aren't Chrome OS. [Downloads are available in Releases.](https://github.com/hoovflight/hoovflight-configurator/releases)
 
-Various types of aircraft are supported by the tool and by Betaflight, e.g. quadcopters, hexacopters, octocopters and fixed-wing aircraft.
+Various types of aircraft are supported by the tool and by Hoovflight, e.g. quadcopters, hexacopters, octocopters and fixed-wing aircraft.
 
 ## Authors
 
-Betaflight Configurator is a [fork](#credits) of the Cleanflight Configurator with support for Betaflight instead of Cleanflight.
+Hoovflight Configurator is a [fork](#credits) of the Cleanflight Configurator with support for Hoovflight instead of Cleanflight.
 
-This configurator is the only configurator with support for Betaflight specific features. It will likely require that you run the latest firmware on the flight controller.
-If you are experiencing any problems please make sure you are running the [latest firmware version](https://github.com/betaflight/betaflight/releases/).
+This configurator is the only configurator with support for Hoovflight specific features. It will likely require that you run the latest firmware on the flight controller.
+If you are experiencing any problems please make sure you are running the [latest firmware version](https://github.com/hoovflight/hoovflight/releases/).
 
 ## Installation
 
 ### Standalone
 
-Download the installer from [Releases.](https://github.com/betaflight/betaflight-configurator/releases)
+Download the installer from [Releases.](https://github.com/hoovflight/hoovflight-configurator/releases)
 
 ### Via Chrome Web Store
 
-[![available in the Chrome web store](https://developer.chrome.com/webstore/images/ChromeWebStore_Badge_v2_206x58.png)](https://chrome.google.com/webstore/detail/betaflight-configurator/kdaghagfopacdngbohiknlhcocjccjao)
+[![available in the Chrome web store](https://developer.chrome.com/webstore/images/ChromeWebStore_Badge_v2_206x58.png)](https://chrome.google.com/webstore/detail/hoovflight-configurator/kdaghagfopacdngbohiknlhcocjccjao)
 
-1. Visit the [Betaflight Configurator product page in the Chrome web store](https://chrome.google.com/webstore/detail/betaflight-configurator/kdaghagfopacdngbohiknlhcocjccjao)
+1. Visit the [Hoovflight Configurator product page in the Chrome web store](https://chrome.google.com/webstore/detail/hoovflight-configurator/kdaghagfopacdngbohiknlhcocjccjao)
 2. Click **+ Add to Chrome**
 
-Please note - the application will automatically update itself when new versions are released.  Please ensure you maintain configuration backups as described in the Betaflight documentation.
+Please note - the application will automatically update itself when new versions are released.  Please ensure you maintain configuration backups as described in the Hoovflight documentation.
 
 ### Alternative way, Chrome app:
 
@@ -46,7 +46,7 @@ Please note - the application will automatically update itself when new versions
 
 ## How to use
 
-You can find the Betaflight Configurator icon in your application tab "Apps"
+You can find the Hoovflight Configurator icon in your application tab "Apps"
 
 ## Native app build via NW.js
 
@@ -85,7 +85,7 @@ You can also use multiple platforms e.g. `gulp <taskname> --osx64 --linux64`.
 
 ## Languages
 
-Betaflight Configurator has been translated into several languages. The application will try to detect and use your system language if a translation into this language is available. You can help [translating the application into your language](https://crowdin.com/project/betaflight-configurator).
+Hoovflight Configurator has been translated into several languages. The application will try to detect and use your system language if a translation into this language is available. You can help [translating the application into your language](https://crowdin.com/project/hoovflight-configurator).
 
 If you prefer to have the application in English or any other language, you can select your desired language in the options menu of the application.
 
@@ -105,17 +105,17 @@ If you have 3D model animation problems, enable "Override software rendering lis
 
 ## Support
 
-If you need help please reach out on the [betaflightgroup](https://betaflightgroup.slack.com) slack channel before raising issues on github. Register and [request slack access here](http://www.betaflight.tk).
+If you need help please reach out on the [hoovflightgroup](https://hoovflightgroup.slack.com) slack channel before raising issues on github. Register and [request slack access here](http://www.hoovflight.tk).
 
 ### Issue trackers
 
-For Betaflight configurator issues raise them here
+For Hoovflight configurator issues raise them here
 
-https://github.com/betaflight/betaflight-configurator/issues
+https://github.com/hoovflight/hoovflight-configurator/issues
 
-For Betaflight firmware issues raise them here
+For Hoovflight firmware issues raise them here
 
-https://github.com/betaflight/betaflight/issues
+https://github.com/hoovflight/hoovflight/issues
 
 ## Technical details
 
@@ -131,4 +131,4 @@ ctn - primary author and maintainer of Baseflight Configurator from which Cleanf
 
 Hydra -  author and maintainer of Cleanflight Configurator from which this project was forked.
 
-[![Crowdin](https://d322cqt584bo4o.cloudfront.net/betaflight-configurator/localized.svg)](https://crowdin.com/project/betaflight-configurator)
+[![Crowdin](https://d322cqt584bo4o.cloudfront.net/hoovflight-configurator/localized.svg)](https://crowdin.com/project/hoovflight-configurator)
