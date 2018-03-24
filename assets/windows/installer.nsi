@@ -24,7 +24,7 @@ Name "${APP_NAME}"
 BrandingText "${COMPANY_NAME}"
 
 # set the icon
-!define MUI_ICON ".\bf_installer_icon.ico"
+!define MUI_ICON ".\hf_install_icon.ico"
 !define MUI_UNICON ".\bf_uninstaller_icon.ico"
 
 #Define uninstall list name
@@ -78,13 +78,13 @@ Function .onInit
             # New version, select default folder
             UserInfo::GetAccountType
             Pop $R2
-            
+
             ${If} $R2 == "Admin"
                 # set the default installation directory
                 !if ${PLATFORM} == 'win64'
-                        StrCpy $INSTDIR "$PROGRAMFILES64\${GROUP_NAME}\${FOLDER_NAME}\" 
+                        StrCpy $INSTDIR "$PROGRAMFILES64\${GROUP_NAME}\${FOLDER_NAME}\"
                 !else
-                        StrCpy $INSTDIR "$PROGRAMFILES\${GROUP_NAME}\${FOLDER_NAME}\" 
+                        StrCpy $INSTDIR "$PROGRAMFILES\${GROUP_NAME}\${FOLDER_NAME}\"
                 !endif
             ${Else}
                 StrCpy $INSTDIR "$DOCUMENTS\${GROUP_NAME}\${FOLDER_NAME}\"
@@ -145,7 +145,7 @@ Section
     !insertmacro UNINSTALLER_DATA_END
 
     # create shortcuts in the start menu and on the desktop
-    CreateDirectory "$SMPROGRAMS\${GROUP_NAME}\${FOLDER_NAME}"    
+    CreateDirectory "$SMPROGRAMS\${GROUP_NAME}\${FOLDER_NAME}"
     CreateShortCut "$SMPROGRAMS\${GROUP_NAME}\${FOLDER_NAME}\${APP_NAME}.lnk" "$INSTDIR\${FILE_NAME_EXECUTABLE}"
     CreateShortCut "$SMPROGRAMS\${GROUP_NAME}\${FOLDER_NAME}\Uninstall ${APP_NAME}.lnk" "$INSTDIR\${FILE_NAME_UNINSTALLER}"
     CreateShortCut "$DESKTOP\${APP_NAME}.lnk" "$INSTDIR\${FILE_NAME_EXECUTABLE}"
@@ -182,10 +182,10 @@ Section "Uninstall"
 
     # terminate uninstaller if the .dat file does not exist
     !define UNINST_TERMINATE
- 
+
     # delete files
     !insertmacro UNINST_DELETE "$INSTDIR" "${UninstName}"
- 
+
     # remove installation folder if it is empty
     RMDir "$INSTDIR"
 
