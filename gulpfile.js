@@ -29,8 +29,8 @@ var nwBuilderOptions = {
     version: '0.28.3',
     files: './dist/**/*',
     macIcns: './src/images/bf_icon.icns',
-    macPlist: { 'CFBundleDisplayName': 'Hoovflight Configurator'},
-    winIco: './src/images/bf_icon.ico'
+    macPlist: { 'CFBundleDisplayName': 'Betaflight Configurator'},
+    winIco: './src/images/hf_icon.ico'
 };
 
 //-----------------
@@ -75,7 +75,7 @@ gulp.task('default', debugBuild);
 // Get platform from commandline args
 // #
 // # gulp <task> [<platform>]+        Run only for platform(s) (with <platform> one of --linux64, --linux32, --osx64, --win32, --win64, or --chromeos)
-// # 
+// #
 function getInputPlatforms() {
     var supportedPlatforms = ['linux64', 'linux32', 'osx64', 'win32','win64', 'chromeos'];
     var platforms = [];
@@ -88,7 +88,7 @@ function getInputPlatforms() {
              console.log('Unknown platform: ' + arg);
              process.exit();
         }
-    }  
+    }
 
     if (platforms.length === 0) {
         var defaultPlatform = getDefaultPlatform();
@@ -126,10 +126,10 @@ function getDefaultPlatform() {
         defaultPlatform = 'win32';
 
         break;
-        
+
     default:
         defaultPlatform = '';
-    
+
         break;
     }
     return defaultPlatform;
@@ -174,27 +174,27 @@ function getRunDebugAppCommand(arch) {
 }
 
 function getReleaseFilename(platform, ext) {
-    return 'hoovflight-configurator_' + pkg.version + '_' + platform + '.' + ext;
+    return 'betaflight-configurator_' + pkg.version + '_' + platform + '.' + ext;
 }
 
-function clean_dist() { 
-    return del([DIST_DIR + '**'], { force: true }); 
+function clean_dist() {
+    return del([DIST_DIR + '**'], { force: true });
 };
 
-function clean_apps() { 
-    return del([APPS_DIR + '**'], { force: true }); 
+function clean_apps() {
+    return del([APPS_DIR + '**'], { force: true });
 };
 
-function clean_debug() { 
-    return del([DEBUG_DIR + '**'], { force: true }); 
+function clean_debug() {
+    return del([DEBUG_DIR + '**'], { force: true });
 };
 
-function clean_release() { 
-    return del([RELEASE_DIR + '**'], { force: true }); 
+function clean_release() {
+    return del([RELEASE_DIR + '**'], { force: true });
 };
 
-function clean_cache() { 
-    return del(['./cache/**'], { force: true }); 
+function clean_cache() {
+    return del(['./cache/**'], { force: true });
 };
 
 // Real work for dist task. Done in another task to call it via
@@ -311,7 +311,7 @@ function start_debug(done) {
 
     var platforms = getPlatforms();
 
-    var exec = require('child_process').exec;    
+    var exec = require('child_process').exec;
     if (platforms.length === 1) {
         var run = getRunDebugAppCommand(platforms[0]);
         console.log('Starting debug app (' + run + ')...');
@@ -359,7 +359,7 @@ function release_zip(arch) {
     var output = getReleaseFilename(arch, 'zip');
     var base = path.join(APPS_DIR, pkg.name, arch);
 
-    return compressFiles(src, base, output, 'Hoovflight Configurator');
+    return compressFiles(src, base, output, 'Betaflight Configurator');
 }
 
 // Create distribution package for chromeos platform
@@ -396,11 +396,11 @@ function release_deb(arch, done) {
              architecture: getLinuxPackageArch('deb', arch),
              maintainer: pkg.author,
              description: pkg.description,
-             postinst: ['xdg-desktop-menu install /opt/hoovflight/hoovflight-configurator/hoovflight-configurator.desktop'],
-             prerm: ['xdg-desktop-menu uninstall hoovflight-configurator.desktop'],
+             postinst: ['xdg-desktop-menu install /opt/betaflight/betaflight-configurator/betaflight-configurator.desktop'],
+             prerm: ['xdg-desktop-menu uninstall betaflight-configurator.desktop'],
              depends: 'libgconf-2-4',
              changelog: [],
-             _target: 'opt/hoovflight/hoovflight-configurator',
+             _target: 'opt/betaflight/betaflight-configurator',
              _out: RELEASE_DIR,
              _copyright: 'assets/linux/copyright',
              _clean: true
@@ -430,9 +430,9 @@ function release_rpm(arch, done) {
              files:
                  [ { cwd: path.join(APPS_DIR, pkg.name, arch),
                      src: '*',
-                     dest: '/opt/hoovflight/hoovflight-configurator' } ],
-             postInstallScript: ['xdg-desktop-menu install /opt/hoovflight/hoovflight-configurator/hoovflight-configurator.desktop'],
-             preUninstallScript: ['xdg-desktop-menu uninstall hoovflight-configurator.desktop'],
+                     dest: '/opt/betaflight/betaflight-configurator' } ],
+             postInstallScript: ['xdg-desktop-menu install /opt/betaflight/betaflight-configurator/betaflight-configurator.desktop'],
+             preUninstallScript: ['xdg-desktop-menu uninstall betaflight-configurator.desktop'],
              tempDir: path.join(RELEASE_DIR,'tmp-rpm-build-' + arch),
              keepTemp: false,
              verbose: false,
@@ -482,10 +482,10 @@ function release_osx64() {
             target: path.join(RELEASE_DIR, getReleaseFilename('macOS', 'dmg')),
             basepath: path.join(APPS_DIR, pkg.name, 'osx64'),
             specification: {
-                title: 'Hoovflight Configurator',
+                title: 'Betaflight Configurator',
                 contents: [
                     { 'x': 448, 'y': 342, 'type': 'link', 'path': '/Applications' },
-                    { 'x': 192, 'y': 344, 'type': 'file', 'path': pkg.name + '.app', 'name': 'Hoovflight Configurator.app' }
+                    { 'x': 192, 'y': 344, 'type': 'file', 'path': pkg.name + '.app', 'name': 'Betaflight Configurator.app' }
                 ],
                 background: path.join(__dirname, 'assets/osx/dmg-background.png'),
                 format: 'UDZO',

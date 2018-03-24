@@ -1,6 +1,6 @@
 {
   "name": "hoovflight-configurator",
-  "description": "Crossplatform configuration tool for Hoovflight flight control system.",
+  "description": "Crossplatform configuration tool for Betaflight flight control system.",
   "version": "10.3.0",
   "main": "main_nwjs.html",
   "bg-script": "js/eventPage.js",
@@ -34,7 +34,6 @@
   "author": "The Hoovflight open source project.",
   "license": "GPL-3.0",
   "dependencies": {
-    "gulp-appdmg": "^1.0.3",
     "i18next": "^10.3.0",
     "i18next-xhr-backend": "^1.5.1",
     "marked": "^0.3.12"
